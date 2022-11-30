@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 [CreateAssetMenu]
 public class IntData : ScriptableObject
 {
-    public int value;
+	public int value;
 
     public void SetValue(int num)
     {
@@ -31,5 +32,6 @@ public class IntData : ScriptableObject
     {
         value += num;
     }
+
     
 }
