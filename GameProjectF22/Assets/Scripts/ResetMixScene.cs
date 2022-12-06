@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ResetMixScene : MonoBehaviour
 {
+
     public void ResetScene()
-    {
+    {      
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

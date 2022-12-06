@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class CounterBehavior : MonoBehaviour
 {
     public int value;
+	public int targetValue;
     public UnityEvent startEvent, triggerEnterEvent, nextPageEvent;
 
     private void onStart()
@@ -18,7 +18,7 @@ public class CounterBehavior : MonoBehaviour
         triggerEnterEvent.Invoke();
         value++;
         
-        if (value == 3)
+        if (value == targetValue)
         {
             nextPageEvent.Invoke();
         }
