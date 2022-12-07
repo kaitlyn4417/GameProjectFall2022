@@ -7,6 +7,6 @@ public class MoveBowl : MonoBehaviour
     public GameObject bowl;
     public void MoveBowlForBake()
     {
-        bowl.transform.position = new Vector3(-7, -2, 0);
+        bowl.transform.position = new Vector3(-6, -2, 0);
     }
 }

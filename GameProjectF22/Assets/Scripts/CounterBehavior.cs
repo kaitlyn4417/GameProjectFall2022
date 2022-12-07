@@ -6,7 +6,7 @@ public class CounterBehavior : MonoBehaviour
 {
     public int value;
 	public int targetValue;
-    public UnityEvent startEvent, triggerEnterEvent, nextPageEvent;
+    public UnityEvent startEvent, triggerEnterEvent, intermediateEvent, nextPageEvent;
 
     private void onStart()
     {
@@ -20,8 +20,12 @@ public class CounterBehavior : MonoBehaviour
         
         if (value == targetValue)
         {
-            nextPageEvent.Invoke();
+            intermediateEvent.Invoke();
         }
+		if (value > targetValue)
+		{
+			nextPageEvent.Invoke();
+		}
     }
     
 }

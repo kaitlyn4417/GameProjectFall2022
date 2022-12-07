@@ -7,17 +7,25 @@ public class SwitchBowlBehavior : MonoBehaviour
 	public SpriteRenderer emptyBowl;
 	public Sprite bowl2;
 	public Sprite bowl3;
+	public Sprite bowl4;
+	private int ingredientCount = 0;
 
 	private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Flour")
+		ingredientCount++;
+		if (ingredientCount == 4)
 		{
 			emptyBowl.sprite = bowl2;
 		}
 		
-        if (other.name == "Milk")
+        if (ingredientCount == 8)
 		{
 			emptyBowl.sprite = bowl3;
+		}
+		
+		if (ingredientCount >= 10)
+		{
+			emptyBowl.sprite = bowl4;
 		}
     }
   
