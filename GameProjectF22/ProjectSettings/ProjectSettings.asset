@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Kaitlyn Graf
-  productName: CakeGame
+  productName: CakeChef
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -73,7 +73,7 @@ PlayerSettings:
   androidDefaultWindowHeight: 1280
   androidMinimumWindowWidth: 400
   androidMinimumWindowHeight: 300
-  androidFullscreenMode: 3
+  androidFullscreenMode: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -135,7 +135,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -2087540080650442955, guid: 5d8d9422aecdf2e48bbf8215d78a56ea, type: 2}
+  - {fileID: 11400000, guid: 8053127de12bd2447bb269220e527502, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -249,7 +251,7 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 3
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -668,7 +670,8 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}

@@ -22,7 +22,7 @@ public class CounterBehavior : MonoBehaviour
         {
             intermediateEvent.Invoke();
         }
-		if (value > targetValue)
+		if (value == (targetValue + 1))
 		{
 			nextPageEvent.Invoke();
 		}
